@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+      <!-- bài 1 -->
+      <div class="mb-3 my-5">
+        <h2 class="title bg-dark text-white" >Bài 1</h2>
+        <h2 class="bg-dark text-white">Kiểm tra điểm chuẩn</h2>
+        <input class="" type="number" id="diemChuan" placeholder="Điểm Chuẩn">
+        <input type="number" id="diemToan" placeholder="Điểm Toán">
+        <input type="number" id="diemLy" placeholder="Điểm Lý">
+        <input type="number" id="diemHoa" placeholder="Điểm Hóa">
+        <br>
+
+        <select class="my-2" name="" id="khuVuc">
+          <label for="">Khu vực</label>
+          <option value="X">Không nằm trong khu vực</option>
+          <option value="A">Khu vực A</option>
+          <option value="B">Khu vực B</option>
+          <option value="C">Khu vực C</option>
+        </select>
+
+        <select class="my-2" name="" id="doiTuong">
+          <label for="">Đối tượng</label>
+          <option value="0">Không nằm trong đối tượng</option>
+          <option value="2.5">Đối tượng 1</option>
+          <option value="1.5">Đối tượng 2</option>
+          <option value="1">Đối tượng 3</option>
+        </select>
+        <br>
+        <button onclick="kiemTra()" class="btn btn-dark" >Kiểm tra</button>
+        <div class="mb-3 ketqua fs-4 bg-warning"></div>
+
+      </div>
+
+      <!-- bài 2 -->
+      <div class="mb-3 my-5">
+        <h2 class="title bg-dark text-white ">Bài 2</h2>
+        <h2 class="title bg-dark text-white">Tính tiền điện</h2>
+        <input class="my-2" type="text" id="hoTen" placeholder="Nhập họ và tên">
+        <input type="number" name="" id="soKw" placeholder="Nhập kw">
+        <br>
+        <button class="btn btn-primary" onclick="tinhTienDien()" >Tính tiền điện</button>
+        <div class="mb-3 soTienDien fs-4 bg-warning my-1"></div>
+      </div>
+
+      <!-- bài 3 -->
+      <div class="mb-3 my-5">
+        <h2 class="bg-dark text-white">Bài 3</h2>
+        <h2 class="bg-dark text-white">Tính thuế thu nhập</h2>
+          <input type="text" id="txtTen" placeholder="Nhập tên">
+          <input type="number" id="txtThuNhap" placeholder="Tổng thu nhập">
+          <input type="number" id="txtPhuThuoc" placeholder="Số người phụ thuộc">
+          <br>
+          <button class="btn btn-primary my-1" onclick="dongThue()" >Tính số tiền đóng thuế</button>
+        <div class="mb-3 dongthue fs-4 bg-warning"></div>
+      </div>
+
+      <!-- bài 4 -->
+      <div class="mb-3 my-5">
+      <h2 class="bg-dark text-white" >Bài 4</h2>
+      <h2 class="bg-dark text-white">Tính tiền cáp</h2>
+      <select onclick="loaiKhachHang()" id="loaiKH" class="d-block my-1">
+        <option value="">Chọn loại khách hàng</option>
+        <option value="doanhNghiep" >Doanh Nghiệp</option>
+        <option value="nhaDan">Nhà Dân</option>
+      </select>
+      <input type="text" value="" id="maKhachHang" placeholder="Mã Khách Hàng">
+      <input type="number" value="" id="soKenhCaoCap" placeholder="Số kênh cao cấp">
+      <input type="number" value="" id="soKetNoi" placeholder="Số kết nối" class="d-none">
+      
+      <button class="btn btn-primary my-1 d-block" onclick="bai4()" >Tính số tiền cap</button>
+      <div class="mb-3 baicap fs-4 bg-warning"></div>
+      </div>
+
+      
+    </div>
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./index.js" ></script>
+</body>
+
+</html>
